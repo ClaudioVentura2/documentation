@@ -313,6 +313,22 @@ in ``/etc/nginx/sites-enabled/odoo.conf`` set:
     proxy_connect_timeout 720s;
     proxy_send_timeout 720s;
 
+<<<<<<< HEAD
+||||||| parent of 2d787d6de (temp)
+    # Add Headers for odoo proxy mode
+    proxy_set_header X-Forwarded-Host $host;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Real-IP $remote_addr;
+
+=======
+    # Add Headers for odoo proxy mode
+    proxy_set_header X-Forwarded-Host $http_host;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Real-IP $remote_addr;
+
+>>>>>>> 2d787d6de (temp)
     # SSL parameters
     ssl_certificate /etc/ssl/nginx/server.crt;
     ssl_certificate_key /etc/ssl/nginx/server.key;
