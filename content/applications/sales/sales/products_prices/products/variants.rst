@@ -1,7 +1,7 @@
 ================
 Product variants
 ================
-
+p
 Product variants are used to give single products a variety of different characteristics, such as
 size and color. Products using variants can be managed at the product template level (for all
 attributes and variants of that product), and/or at the variant level (for individual variants).
